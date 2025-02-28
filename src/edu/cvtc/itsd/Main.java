@@ -91,7 +91,7 @@ public class Main {
         statementUpdateMember.close();
         statementUpdateLog.close();
         db.close();
-        System.out.println("Clean shutdown");
+        System.out.println("Clean shutdown - Application and JVM");
       }
       catch (SQLException e) {
         System.err.println(e.getMessage());
@@ -230,6 +230,9 @@ public class Main {
     frame.setMinimumSize(new Dimension(320, 240));
     frame.setPreferredSize(new Dimension(640, 480));
     frame.setMaximumSize(new Dimension(640, 480));
+
+    // Ensures the proper shutdown of the application.
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     // Collect each "card" panel in a deck.
     deck = new JPanel(new CardLayout());
