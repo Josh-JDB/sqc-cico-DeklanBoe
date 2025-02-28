@@ -70,4 +70,13 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected Results
 * The card field should ignore all non-numerics
 
+# Module 5: Run time continue once application closes (Ticket #502)
+
+## Test steps
+1. Build and run CiCo.
+2. Close the application.
+
+## Expected results
+* Since the application is closed, IIntelliJ should stop running the application. 
+
 
