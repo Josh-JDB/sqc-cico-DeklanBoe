@@ -77,6 +77,6 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 2. Close the application.
 
 ## Expected results
-* Since the application is closed, IIntelliJ should stop running the application.   
+* Since the application is closed, IIntelliJ should stop running the application.
 
 
