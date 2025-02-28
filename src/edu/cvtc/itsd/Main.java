@@ -224,7 +224,7 @@ public class Main {
     db = null;
     timer = new java.util.Timer("CiCo timeout timer");
     Handler handler = new Handler();
-
+                   
     // Create our GUI.
     JFrame frame = new JFrame();
     frame.setMinimumSize(new Dimension(320, 240));
