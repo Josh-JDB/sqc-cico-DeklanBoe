@@ -59,6 +59,9 @@ public class Main {
       else {
         Toolkit.getDefaultToolkit().beep();
       }
+      if (fb.getDocument().getLength() == MAX_LENGTH) {
+        Main.processCard();
+      }
     }
   }
 
@@ -259,12 +262,6 @@ public class Main {
     fieldNumber.setBackground(Color.green);
     fieldNumber.setForeground(Color.magenta);
     panelMain.add(fieldNumber);
-
-    JButton updateButton = new JButton("Update");
-    updateButton.setAlignmentX(JComponent.CENTER_ALIGNMENT);
-    updateButton.addActionListener(new Update());
-    updateButton.setForeground(Color.green);
-    panelMain.add(updateButton);
 
     panelMain.add(Box.createVerticalGlue());
 
